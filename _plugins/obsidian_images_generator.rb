@@ -3,7 +3,7 @@ class WikiImages < Jekyll::Generator
   def generate(site)
 
     all_notes = site.collections['notes'].docs
-    all_pages = site.collections['pages'].docs
+    all_pages = site.pages
 
     all_docs = all_notes + all_pages
 
